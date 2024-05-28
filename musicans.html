@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Musicans</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            overflow: hidden; /* Verhindert Scrollen des gesamten Fensters */
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('00002-94211337.png'); /* Hintergrundbild */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center 15%; /* Bild nach unten verschieben */
+            z-index: -1; /* Hintergrund nach hinten schieben */
+            filter: blur(10px); /* Standardmäßig verschwommen */
+            transition: filter 0.3s; /* Übergang für den Blur-Effekt */
+        }
+
+        .background.clear {
+            filter: blur(0); /* Schärfen des Hintergrunds */
+        }
+
+        .content {
+            height: 100%;
+            overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            color: #fff; /* Weißer Text */
+        }
+
+        .heading h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .heading span {
+            color: #ff007f; /* Cyberpunk-farbener Akzent */
+        }
+
+        .description {
+            font-size: 0.7em;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 20px; /* Platz für Scrollbar */
+        }
+
+        .dream {
+            margin: 10px;
+        }
+
+        .dream img {
+            width: 300px; /* Kleinere Bilder */
+            height: auto;
+            margin: 5px;
+            border: 2px solid #444; /* Rahmen um die Bilder */
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .dream img:hover {
+            transform: scale(2.0); /* Vergrößern auf 2-fache Größe */
+            border-color: #ff007f; /* Rahmenfarbe beim Hover */
+            z-index: 10; /* Bild in den Vordergrund bringen */
+        }
+    </style>
+</head>
+<body>
+    <div class="background" id="background"></div>
+    <div class="content" id="content">
+        <div class="container">
+            <div class="heading">
+                <h3>Musi<span>cans</span></h3>
+            </div>
+            <div class="description">
+                Eine intensive und dramatische Atmosphäre, die durch die futuristische und mystische Ästhetik verstärkt wird.<br>
+    
+            <br>
+            <br>
+            Der Künstler hat ein Bild geschaffen, das eine postapokalyptische Welt zeigt, in der Gefahr und Ungewissheit allgegenwärtig sind. 
+            Der Himmel ist von dunklen, bedrohlichen Wolken bedeckt, die eine unheilvolle Stimmung erzeugen und wenig Licht durchlassen. <br>
+            <br>
+            Im Zentrum der Szene steht eine entschlossene Figur, die allein durch eine verlassene Stadt geht. Ihre Haltung und Kleidung deuten 
+            auf eine Kriegerin oder Überlebenskünstlerin hin, die in einer rauen, feindseligen Umgebung lebt. Die Figur strahlt eine 
+            unerschütterliche Entschlossenheit aus, als wäre sie bereit, jeder Bedrohung zu begegnen.
+<br>
+            <br>
+            Die gigantische, mechanische Schlange, die sich hinter ihr erhebt, verstärkt die bedrohliche Atmosphäre erheblich. Ihre roten 
+            Augen und der weit aufgerissene Rachen lassen keinen Zweifel daran, dass sie eine tödliche Gefahr darstellt. Die Mischung aus 
+            biologischen und mechanischen Elementen der Schlange suggeriert, dass dies eine Welt ist, in der Technologie und Natur zu monströsen 
+            Hybriden verschmolzen sind.<br>
+            <br>
+
+            Die verlassenen Gebäude im Hintergrund, die teilweise zerfallen sind, unterstreichen den Eindruck einer Welt, die einst von Menschen 
+            bewohnt war, aber nun verlassen und zerstört ist. Straßenlaternen, die noch vereinzelt Licht spenden, wirken wie einsame Relikte einer
+             vergangenen Zivilisation.
+            <br>
+            Der Künstler hat durch die Wahl der Farben und Kontraste eine bedrückende und gleichzeitig faszinierende Szenerie geschaffen. 
+            Die dominierenden dunklen Töne werden durch das bedrohliche Rot der Schlangenaugen und die vereinzelten Lichtquellen akzentuiert, 
+            was die dramatische Wirkung des Bildes verstärkt.
+            <br>
+            Es gibt ein starkes Gefühl von Isolation und Überlebenskampf, das den Betrachter in den Bann zieht. Die Szene erzählt von einer Welt, 
+            in der das Überleben jeden Tag aufs Neue erkämpft werden muss und in der Gefahren aus jeder Ecke lauern. Die Figur im Vordergrund 
+            scheint jedoch unerschrocken und bereit zu sein, sich diesen Herausforderungen zu stellen.
+
+
+            <br>
+            Insgesamt vermittelt das Bild eine Atmosphäre der Spannung und des Nervenkitzels, die sowohl erschreckend als auch faszinierend ist. 
+            Der Künstler hat eine Welt erschaffen, die zum Nachdenken anregt und den Betrachter dazu einlädt, sich in diese düstere, 
+            postapokalyptische Vision hineinzuversetzen.
+            <br>
+
+            <br>Alle Personen und Kullisen sind fiktiv. Alle Bilder sind KI generiert.
+            </div>
+            <div class="box">
+                <div class="dream">
+                    <img src="musicans/00001-1210882207.png">
+                    <img src="musicans/00002-1314402179.png">
+                    <img src="musicans/00002-2624190921.png">
+                    <img src="musicans/00003-3334804967.png">
+                    <img src="musicans/00003-3550179222.png">
+                    <img src="musicans/00004-1760731293.png">
+                    <img src="musicans/00004-2107879110.png">
+                    <img src="musicans/00004-3334804968.png">    
+                </div>
+                <div class="dream">
+                    <img src="musicans/00005-3211769902.png"><br>
+                    <img src="musicans/00005-3334804969.png">
+                    <img src="musicans/00006-3198969977.png">
+                    <img src="musicans/00006-3211769903.png">
+                    <img src="musicans/00006-3334804970.png">
+                    <img src="musicans/00007-3198969978.png"> 
+                    <img src="musicans/00007-3211769904.png">
+                    <img src="musicans/00007-3334804971.png">
+                </div>
+                <div class="dream">
+                    <img src="musicans/00008-2255998940.png">
+                    <img src="musicans/00010-3208843283.png"><br>
+                    <img src="musicans/00010-3211769907.png"><br>
+                    <img src="musicans/00011-3208843284.png">
+                    <img src="musicans/00011-3211769908.png"><br>
+                    <img src="musicans/00011-3334804975.png">
+                    <img src="musicans/00012-3208843285.png">
+                    <img src="musicans/00012-3211769909.png">
+                    <img src="musicans/00012-3334804976.png">
+                    <img src="musicans/00013-3334804977.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.addEventListener('mousemove', () => {
+            document.getElementById('background').classList.add('clear');
+        });
+
+        document.body.addEventListener('mouseleave', () => {
+            document.getElementById('background').classList.remove('clear');
+        });
+    </script>
+</body>
+</html>
+
