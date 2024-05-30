@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechheads</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            overflow: hidden; /* Verhindert Scrollen des gesamten Fensters */
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('00000-1930613810.png'); /* Hintergrundbild */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center 15%;
+            z-index: -1; /* Hintergrund nach hinten schieben */
+            filter: blur(10px); /* Standardmäßig verschwommen */
+            transition: filter 0.3s; /* Übergang für den Blur-Effekt */
+        }
+
+        .background.clear {
+            filter: blur(0); /* Schärfen des Hintergrunds */
+        }
+
+        .content {
+            height: 100%;
+            overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            color: #ffffff; /* Weißer Text */
+        }
+
+        .heading h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-family: 'Nosifer', sans-serif;
+            color: #5f87d7; /* Weißer Text */
+        }
+
+        .heading span {
+            color: #250aaf; /* Cyberpunk-farbener Akzent */
+        }
+
+        .description {
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 20px; /* Platz für Scrollbar */
+        }
+
+        .dream {
+            margin: 10px;
+        }
+
+        .dream img {
+            width: 300px; /* Kleinere Bilder */
+            height: auto;
+            margin: 5px;
+            border: 2px solid #444; /* Rahmen um die Bilder */
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .dream img:hover {
+            transform: scale(2.0); /* Vergrößern auf 2-fache Größe */
+            border-color: #ff007f; /* Rahmenfarbe beim Hover */
+            z-index: 10; /* Bild in den Vordergrund bringen */
+        }
+    </style>
+</head>
+<body>
+    <div class="background" id="background"></div>
+    <div class="content" id="content">
+        <div class="container">
+            <div class="heading">
+                <h3>Mech<span>heads</span></h3>
+            </div>
+            <div class="description">
+                Eine düstere und bedrohliche Atmosphäre.<br>
+    
+                <br>
+                <br>Der Künstler hat eine Welt erschaffen, in der Technologie und menschliche Elemente zu 
+                einer beängstigenden Synthese verschmolzen sind. Der Himmel ist von dichten, düsteren Wolken bedeckt, 
+                die nur wenig Licht durchlassen und die Szenerie in eine kalte, unheimliche Dunkelheit tauchen.
+                <br>
+                <br>Im Vordergrund steht eine kybernetische Figur, die stark bewaffnet und kampfbereit wirkt. Die leuchtend 
+                roten Augen und die orangefarbenen Lichter an seiner Rüstung verstärken den Eindruck von Gefahr und Aggression. 
+                Diese Figur scheint der Inbegriff einer mechanisierten Zukunft zu sein, in der Menschlichkeit und Technologie untrennbar 
+                miteinander verbunden sind.
+                <br>
+                <br>Der Hintergrund ist geprägt von hohen, dunklen Gebäuden, deren Fenster in einem unheimlichen Rot glühen. Diese 
+                leuchtenden Punkte erzeugen das Gefühl, dass die Stadt unter ständiger Überwachung steht und kein Ort für Zuflucht oder Sicherheit ist. 
+                Rauch und Dunst steigen von den Ruinen und Trümmern am Boden auf, was die Vorstellung einer kürzlich stattgefundenen oder andauernden
+                 Zerstörung nahelegt.
+                <br>
+                <br>Die gesamte Komposition wirkt kalt und unnachgiebig, als ob die Menschlichkeit in dieser Welt verloren gegangen ist. Die starren, 
+                mechanischen Formen und die intensive Farbpalette vermitteln ein Gefühl der Unentrinnbarkeit und des Schicksals. Die Figur im Vordergrund 
+                scheint der letzte Verteidiger oder vielleicht der Vollstrecker in dieser feindseligen Umgebung zu sein.
+                
+                <br>
+                <br>Es gibt ein starkes Gefühl von Isolation und Entfremdung, als ob die Menschen in dieser Welt nur noch Überbleibsel einer vergangenen 
+                Ära sind, die von Maschinen dominiert wird. Die Szene ist ein eindrucksvolles Beispiel für Cyberpunk-Ästhetik, die das Zusammenspiel von 
+                fortschrittlicher Technologie und dystopischen Gesellschaftsstrukturen darstellt.
+                <br>
+                <br>Insgesamt erzeugt das Bild eine Atmosphäre der Beklommenheit und des Unbehagens, aber auch der Faszination für eine mögliche Zukunft, 
+                in der die Grenzen zwischen Mensch und Maschine verschwimmen. Der Künstler hat eine visuelle Erzählung geschaffen, die sowohl abschreckend 
+                als auch anziehend ist und den Betrachter in eine Welt voller Konflikte und Ungewissheit zieht.
+                <br>
+                <br>Alle Personen, Maschinen und Kullisen sind fiktiv. Alle Bilder sind KI generiert.
+    
+            </div>
+            <div class="box">
+                <div class="dream">
+                    <div class="dream">
+                        <img src="mschheads/00001.jpg">
+                        <img src="mschheads/00002.jpg">
+                        <img src="mschheads/00104-2973633537.png"><br>
+                        <img src="mschheads/00003.jpg"><br>
+                        <img src="mschheads/00005.jpg">
+                        <img src="mschheads/00006.jpg"><br>
+                        <img src="mschheads/00007.jpg">
+                        <img src="mschheads/00017.jpg" >
+                        <img src="mschheads/00103-2973633536.png" >
+                        <img src="mschheads/00018.jpg">
+                        <img src="mschheads/00017.png">
+                        <img src="mschheads/00018.png"><br>
+                        <img src="mschheads/00513-3140745931.png"><br>
+                        <img src="mschheads/00514-3140745932.png">
+                        <img src="mschheads/00515-3140745933.png">
+                        <img src="mschheads/00101-2973633534.png">
+                        <img src="mschheads/00104-2973633537.png">
+                        <img src="mschheads/00516-3140745934.png">
+                        <img src="mschheads/00517-3140745935.png">
+                    </div>
+                    <div class="dream">
+                        <img src="mschheads/00518-3140745936.png">
+                        <img src="mschheads/00518-3140745936.png">
+                        <img src="mschheads/00519-3140745937.png">
+                        <img src="mschheads/00520-3140745938.png"> 
+                        <img src="mschheads/00100-2973633533.png">       
+                        <img src="mschheads/00521-3140745939.png">
+                        <img src="mschheads/00522-3140745940.png"><br>
+                        <img src="mschheads/00523-3140745941.png">    
+                        <img src="mschheads/00102-2973633535.png">
+                        <img src="mschheads/00051-2897634496.png">
+                        <img src="mschheads/00533-3140745951.png"><br>
+                        <img src="mschheads/00535-3140745953.png">
+                        <img src="mschheads/00536-3140745954.png"><br>
+                        <img src="mschheads/00539-3140745957.png"><br>
+                        <img src="mschheads/00000-1930613810.png">
+                    </div> 
+            </div>
+        </div>
+    </div>
+    <script>
+        let timeout;
+        document.body.addEventListener('mousemove', () => {
+            const background = document.getElementById('background');
+            clearTimeout(timeout);
+            background.classList.add('clear');
+            timeout = setTimeout(() => {
+                background.classList.remove('clear');
+            }, 3000); // 3 Sekunden ohne Mausbewegung bis das Bild wieder unscharf wird
+        });
+    </script>
+</body>
+</html>

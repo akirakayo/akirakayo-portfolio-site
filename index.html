@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akira Kayo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background-color: #000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            position: relative;
+            height: 100%;
+            width: 100%; 
+        }
+
+        .image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: url('00036-3262151017.png') no-repeat center center;
+            background-size: cover;
+            filter: blur(20px);
+            transition: filter 0.5s ease;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(142, 70, 124);
+            font-size: 3rem;
+            font-family: 'Nosifer', sans-serif;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            opacity: 1;
+            transition: opacity 0.5s ease;
+            background: linear-gradient(45deg, #e3dee2, #c46ab9, #c930d4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .container.sharp .text-overlay {
+            opacity: 0;
+        }
+
+        .menu, .social {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            color: rgba(231, 72, 194, 0.5);
+            background: linear-gradient(45deg, #e3dee2, #c46ab9, #c930d4);
+            font-size: 1.2rem;
+            font-family: Arial, sans-serif;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            padding: 0.5rem 0;
+        }
+
+        .menu {
+            top: 0;
+            padding: 1rem;
+            height: 40px;
+            font-size: 14px;
+            color: #bf25a8; /* Weißer Text */
+        }
+
+        .social {
+            bottom: 0;
+            padding: 1rem;
+            height: 40px;
+            font-size: 14px;
+        }
+
+        .container.sharp .menu, .container.sharp .social {
+            opacity: 1;
+        }
+
+        .menu a, .social a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color:linear-gradient(55deg, #d10db3, #bf58b3, #3d043d);
+            transition: color 0.5s ease;
+        }
+
+        .menu a:hover, .social a:hover {
+            color: rgb(255, 255, 255);   
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image"></div>
+        <div class="text-overlay">Akira Kayo<br>AI Artist</div>
+        <div class="menu">
+            <a href="info.html" target="_blank">Infos</a>
+            <a href="アスカ.html" target="_blank">アスカ</a>
+            <a href="cpz.html" target="_blank">Cyberpunk Zombies</a>
+            <a href="fnsy.html" target="_blank">Fantasy</a>
+            <a href="nordicwoman.html" target="_blank">Nordic Woman</a>
+            <a href="mll.html" target="_blank">Mistical Landscape</a>
+            <a href="musicans.html" target="_blank">Musicans</a>
+            <a href="mechheads.html" target="_blank">Mechheads</a>
+            <a href="pksm.html" target="_blank">Pinkism</a>
+        </div>
+        <div class="social">
+            <a href="https://www.artstation.com/akirakayo6" target="_blank">ArtStation</a>
+            <a href="https://stock.adobe.com/de/contributor/212068723/akira" target="_blank">Adobe Stock</a>
+            <a href="https://www.facebook.com/profile.php?id=61560216002453" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/realakirakayo/" target="_blank">Instagram</a>
+            <a href="https://twitter.com/akira_kayo" target="_blank">X</a>
+            <a href="https://www.youtube.com/channel/UCDw1IX3eu9KWikm7d5LRknA" target="_blank">YouTube</a>
+        </div>
+    </div>
+
+    <script>
+        let timeout;
+        document.addEventListener('mousemove', function() {
+            const container = document.querySelector('.container');
+            const image = document.querySelector('.image');
+            container.classList.add('sharp');
+            image.style.filter = 'blur(0)';
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                container.classList.remove('sharp');
+                image.style.filter = 'blur(20px)';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musicans</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
@@ -22,7 +24,7 @@
             background-image: url('00002-94211337.png'); /* Hintergrundbild */
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center 15%; /* Bild nach unten verschieben */
+            background-position: center 15%;
             z-index: -1; /* Hintergrund nach hinten schieben */
             filter: blur(10px); /* Standardmäßig verschwommen */
             transition: filter 0.3s; /* Übergang für den Blur-Effekt */
@@ -42,20 +44,22 @@
         .container {
             text-align: center;
             padding: 20px;
-            color: #fff; /* Weißer Text */
+            color: #ffffff; /* Weißer Text */
         }
 
         .heading h3 {
             font-size: 2em;
             margin-bottom: 10px;
+            font-family: 'Nosifer', sans-serif;
+            color: #90a5d0; /* Weißer Text */
         }
 
         .heading span {
-            color: #ff007f; /* Cyberpunk-farbener Akzent */
+            color: #6a0aaf; /* Cyberpunk-farbener Akzent */
         }
 
         .description {
-            font-size: 0.7em;
+            font-size: 0.9em;
             margin-bottom: 20px;
         }
 
@@ -131,52 +135,55 @@
             <br>
 
             <br>Alle Personen und Kullisen sind fiktiv. Alle Bilder sind KI generiert.
+    
             </div>
             <div class="box">
                 <div class="dream">
-                    <img src="musicans/00001-1210882207.png">
-                    <img src="musicans/00002-1314402179.png">
-                    <img src="musicans/00002-2624190921.png">
-                    <img src="musicans/00003-3334804967.png">
-                    <img src="musicans/00003-3550179222.png">
-                    <img src="musicans/00004-1760731293.png">
-                    <img src="musicans/00004-2107879110.png">
-                    <img src="musicans/00004-3334804968.png">    
-                </div>
-                <div class="dream">
-                    <img src="musicans/00005-3211769902.png"><br>
-                    <img src="musicans/00005-3334804969.png">
-                    <img src="musicans/00006-3198969977.png">
-                    <img src="musicans/00006-3211769903.png">
-                    <img src="musicans/00006-3334804970.png">
-                    <img src="musicans/00007-3198969978.png"> 
-                    <img src="musicans/00007-3211769904.png">
-                    <img src="musicans/00007-3334804971.png">
-                </div>
-                <div class="dream">
-                    <img src="musicans/00008-2255998940.png">
-                    <img src="musicans/00010-3208843283.png"><br>
-                    <img src="musicans/00010-3211769907.png"><br>
-                    <img src="musicans/00011-3208843284.png">
-                    <img src="musicans/00011-3211769908.png"><br>
-                    <img src="musicans/00011-3334804975.png">
-                    <img src="musicans/00012-3208843285.png">
-                    <img src="musicans/00012-3211769909.png">
-                    <img src="musicans/00012-3334804976.png">
-                    <img src="musicans/00013-3334804977.png">
+                    <div class="dream">
+                        <img src="musicans/00001-1210882207.png">
+                        <img src="musicans/00002-1314402179.png">
+                        <img src="musicans/00002-2624190921.png">
+                        <img src="musicans/00003-3334804967.png">
+                        <img src="musicans/00003-3550179222.png">
+                        <img src="musicans/00004-1760731293.png">
+                        <img src="musicans/00004-2107879110.png">
+                        <img src="musicans/00004-3334804968.png">    
+                    </div>
+                    <div class="dream">
+                        <img src="musicans/00005-3211769902.png"><br>
+                        <img src="musicans/00005-3334804969.png">
+                        <img src="musicans/00006-3198969977.png">
+                        <img src="musicans/00006-3211769903.png">
+                        <img src="musicans/00006-3334804970.png">
+                        <img src="musicans/00007-3198969978.png"> 
+                        <img src="musicans/00007-3211769904.png">
+                        <img src="musicans/00007-3334804971.png">
+                    </div>
+                    <div class="dream">
+                        <img src="musicans/00008-2255998940.png">
+                        <img src="musicans/00010-3208843283.png"><br>
+                        <img src="musicans/00010-3211769907.png"><br>
+                        <img src="musicans/00011-3208843284.png">
+                        <img src="musicans/00011-3211769908.png"><br>
+                        <img src="musicans/00011-3334804975.png">
+                        <img src="musicans/00012-3208843285.png">
+                        <img src="musicans/00012-3211769909.png">
+                        <img src="musicans/00012-3334804976.png">
+                        <img src="musicans/00013-3334804977.png">
                 </div>
             </div>
         </div>
     </div>
     <script>
+        let timeout;
         document.body.addEventListener('mousemove', () => {
-            document.getElementById('background').classList.add('clear');
-        });
-
-        document.body.addEventListener('mouseleave', () => {
-            document.getElementById('background').classList.remove('clear');
+            const background = document.getElementById('background');
+            clearTimeout(timeout);
+            background.classList.add('clear');
+            timeout = setTimeout(() => {
+                background.classList.remove('clear');
+            }, 3000); // 3 Sekunden ohne Mausbewegung bis das Bild wieder unscharf wird
         });
     </script>
 </body>
 </html>
-

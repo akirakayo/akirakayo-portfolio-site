@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordicwoman</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            overflow: hidden; /* Verhindert Scrollen des gesamten Fensters */
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('01 (63).png'); /* Hintergrundbild */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center 15%;
+            z-index: -1; /* Hintergrund nach hinten schieben */
+            filter: blur(10px); /* Standardmäßig verschwommen */
+            transition: filter 0.3s; /* Übergang für den Blur-Effekt */
+        }
+
+        .background.clear {
+            filter: blur(0); /* Schärfen des Hintergrunds */
+        }
+
+        .content {
+            height: 100%;
+            overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            color: #ffffff; /* Weißer Text */
+        }
+
+        .heading h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-family: 'Nosifer', sans-serif;
+            color: #90a5d0; /* Weißer Text */
+        }
+
+        .heading span {
+            color: #6a0aaf; /* Cyberpunk-farbener Akzent */
+        }
+
+        .description {
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 20px; /* Platz für Scrollbar */
+        }
+
+        .dream {
+            margin: 10px;
+        }
+
+        .dream img {
+            width: 300px; /* Kleinere Bilder */
+            height: auto;
+            margin: 5px;
+            border: 2px solid #444; /* Rahmen um die Bilder */
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .dream img:hover {
+            transform: scale(2.0); /* Vergrößern auf 2-fache Größe */
+            border-color: #ff007f; /* Rahmenfarbe beim Hover */
+            z-index: 10; /* Bild in den Vordergrund bringen */
+        }
+    </style>
+</head>
+<body>
+    <div class="background" id="background"></div>
+    <div class="content" id="content">
+        <div class="container">
+            <div class="heading">
+                <h3>Nordic<span>Woman</span></h3>
+            </div>
+            <div class="description">
+                Eine intensive und dramatische Atmosphäre, die durch die futuristische und mystische Ästhetik verstärkt wird.<br>
+    
+                <br>
+                <br>
+                Der Künstler schafft durch die Serie eine fesselnde und spannende Erzählung, die den Betrachter in eine fremde und faszinierende Welt entführt. 
+                Die Gesamtkomposition der Bilder spielt gekonnt mit Licht und Schatten, um eine Stimmung der Erwartung und des Unbehagens zu erzeugen. <br>
+                <br>
+                Die nordischen Frauen in der Serie verkörpern eine Mischung aus altertümlicher Weisheit und futuristischer Stärke, was ihre Rolle als zentrale 
+                Figuren in dieser Erzählung unterstreicht. Die dramatischen Kontraste und die visuelle Tiefe der Bilder ziehen den Betrachter in eine fiktive Realität, 
+                die zugleich verlockend und beängstigend ist.<br>
+                <br>
+                Insgesamt hinterlässt die Serie einen starken Eindruck von Mystik, Stärke und einer futuristischen Vision. Die Kunstwerke vermitteln das Gefühl, 
+                dass jede Szene Teil einer größeren Geschichte ist, die von Macht, Überleben und Geheimnissen handelt. Die Spannung und das visuelle Drama machen 
+                die Serie zu einem eindrucksvollen Erlebnis, das die Fantasie anregt und den Betrachter in eine andere Welt versetzt.<br>
+                <br>
+                <br>Alle Personen und Kullisen sind fiktiv. Alle Bilder sind KI generiert.
+    
+            </div>
+            <div class="box">
+                <div class="dream">
+                    <div class="dream">
+                        <img src="nordicwoman/01 (1).png">
+                        <img src="nordicwoman/01 (48).png">
+                        <img src="nordicwoman/01 (4).png">
+                        <img src="nordicwoman/01 (12).png">
+                        <img src="nordicwoman/01 (14).png">
+                        <img src="nordicwoman/01 (35).png">
+                        <img src="nordicwoman/01 (15).png">
+                        <img src="nordicwoman/01 (16).png">    
+                    </div>
+                    <div class="dream">
+                        <img src="nordicwoman/01 (53).png"><br>
+                        <img src="nordicwoman/01 (67).png">
+                        <img src="nordicwoman/01 (63).png">
+                        <img src="nordicwoman/01 (9).png">
+                        <img src="nordicwoman/01 (11).png">
+                        <img src="nordicwoman/01 (13).png"> 
+                        <img src="nordicwoman/01 (74).png">
+                        <img src="nordicwoman/01 (49).png">
+                    </div>
+                    <div class="dream">
+                        <img src="nordicwoman/01 (65).png">
+                        <img src="nordicwoman/01 (68).png"><br>
+                        <img src="nordicwoman/01 (54).png"><br>
+                        <img src="nordicwoman/01 (80).png">
+                        <img src="nordicwoman/01 (78).png"><br>
+                        <img src="nordicwoman/01 (42).png">
+                        <img src="nordicwoman/01 (75).png">
+                        <img src="nordicwoman/01 (6).png">
+                        <img src="nordicwoman/01 (5).png">
+                        <img src="nordicwoman/01 (7).png">   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let timeout;
+        document.body.addEventListener('mousemove', () => {
+            const background = document.getElementById('background');
+            clearTimeout(timeout);
+            background.classList.add('clear');
+            timeout = setTimeout(() => {
+                background.classList.remove('clear');
+            }, 3000); // 3 Sekunden ohne Mausbewegung bis das Bild wieder unscharf wird
+        });
+    </script>
+</body>
+</html>

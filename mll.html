@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misticle Landscape</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            overflow: hidden; /* Verhindert Scrollen des gesamten Fensters */
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('00001-1934443038.png'); /* Hintergrundbild */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -1; /* Hintergrund nach hinten schieben */
+            filter: blur(10px); /* Standardmäßig verschwommen */
+            transition: filter 0.3s; /* Übergang für den Blur-Effekt */
+        }
+
+        .background.clear {
+            filter: blur(0); /* Schärfen des Hintergrunds */
+        }
+
+        .content {
+            height: 100%;
+            overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            color: #fff; /* Weißer Text */
+        }
+
+        .heading h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-family: 'Nosifer', sans-serif;
+            color: #13dde4; /* Weißer Text */
+        }
+
+        .heading span {
+            color: #ef2c0a; /* Cyberpunk-farbener Akzent */
+        }
+
+        .description {
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 20px; /* Platz für Scrollbar */
+        }
+
+        .dream {
+            margin: 10px;
+        }
+
+        .dream img {
+            width: 300px; /* Kleinere Bilder */
+            height: auto;
+            margin: 5px;
+            border: 2px solid #444; /* Rahmen um die Bilder */
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .dream img:hover {
+            transform: scale(2.0); /* Vergrößern auf 2-fache Größe */
+            border-color: #ff007f; /* Rahmenfarbe beim Hover */
+            z-index: 10; /* Bild in den Vordergrund bringen */
+        }
+    </style>
+</head>
+<body>
+    <div class="background" id="background"></div>
+    <div class="content" id="content">
+        <div class="container">
+            <div class="heading">
+                <h3>Misticle<span>Landscape</span></h3>
+            </div>
+            <div class="description">
+                Eine mystische und faszinierende Atmosphäre.<br>
+                <br>Der Künstler hat ein Landschaftsbild geschaffen, das durch seine intensiven Farben und dramatische Beleuchtung 
+                beeindruckt. Der tiefrote Mond dominiert den Himmel und taucht die gesamte Szenerie in ein unheimliches, fast 
+                übernatürliches Licht. Die Berge im Hintergrund wirken majestätisch und zugleich bedrohlich, als ob sie Geheimnisse 
+                verbergen, die darauf warten, entdeckt zu werden. Der Himmel ist in tiefen Violett- und Blautönen gehalten, was 
+                die nächtliche Stimmung verstärkt.
+                <br>
+                <br>Die Bäume am Ufer des Sees leuchten in lebhaften Rottönen und kontrastieren stark mit dem dunklen Hintergrund. 
+                Besonders auffällig ist der einzelne Baum im Vordergrund, dessen leuchtend rote Blätter im Wind zu tanzen scheinen. 
+                Das Wasser des Sees spiegelt die beeindruckende Szenerie wider, wodurch ein Gefühl von Tiefe und Unendlichkeit entsteht. 
+                Kleine Lichtreflexe auf der Wasseroberfläche verstärken den Eindruck von magischem Glitzern.
+                <br>
+                <br>Die gesamte Szene wirkt surreal und lädt den Betrachter ein, in eine andere Welt einzutauchen. Es ist eine Welt, 
+                in der die Grenzen zwischen Realität und Fantasie verschwimmen. Der Künstler hat durch die gezielte Farbwahl und 
+                Komposition eine emotionale Wirkung erzielt, die sowohl beruhigend als auch beunruhigend ist. Man spürt eine gewisse 
+                Einsamkeit, aber auch eine tiefe Verbundenheit mit der Natur. Die Berge im Hintergrund symbolisieren Stärke und Beständigkeit, 
+                während der See Ruhe und Reflexion vermittelt.
+                <br>
+                <br>Insgesamt erzeugt das Bild eine Atmosphäre der Ehrfurcht und des Staunens. Es ist ein Ort, an dem das Bekannte und das Unbekannte 
+                aufeinandertreffen, und wo jede Ecke eine neue Geschichte zu erzählen scheint. Der Künstler hat eine Szenerie geschaffen, die sowohl 
+                zum Träumen als auch zum Nachdenken anregt.
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>Alle Kullisen sind fiktiv. Alle Bilder sind KI generiert.
+    
+            </div>
+            <div class="box">
+                <div class="dream">
+                    <img src="ml/00000-412829906.png">
+                    <img src="ml/00000-412829910.png">
+                    <img src="ml/00000-412829912.png"><br>
+                    <img src="ml/00000-716693585.png"><br>
+                    <img src="ml/00000-1835698013.png">
+                    <img src="ml/00000-1835698015.png"><br>
+                    <img src="ml/00000-1835698021.png"><br>
+                    <img src="ml/00000-2379840536.png">
+                    <img src="ml/00001-2379840537.png"><br>
+                    <img src="ml/00001-412829907.png">
+                    <img src="ml/00001-412829911.png"><br>
+                    <img src="ml/00001-412829913.png"><br>
+                    <img src="ml/00001-1835698014.png">
+                    <img src="ml/00001-1835698016.png"><br>
+                    <img src="ml/00001-1835698022.png">
+                    <img src="ml/00001-1934443038.png"><br>
+                </div>
+                <div class="dream">
+                    <img src="ml/00002-412829908.png">
+                    <img src="ml/00002-412829914.png"><br>
+                    <img src="ml/00002-1598867958.png"><br>        
+                    <img src="ml/00002-1835698017.png">
+                    <img src="ml/00002-2379840538.png"><br>
+                    <img src="ml/00003-412829909.png"><br>    
+                    <img src="ml/00003-412829915.png">
+                    <img src="ml/00003-1081651298.png"><br>
+                    <img src="ml/00003-1835698018.png">
+                    <img src="ml/00003-2379840539.png">
+                    <img src="ml/00004-1835698019.png"><br>
+                    <img src="ml/00004-2379840540.png">
+                    <img src="ml/00005-1835698020.png"> <br>
+                    <img src="ml/00005-2379840541.png">
+                    <img src="ml/00006-2379840542.png"><br>  
+                    <img src="ml/00007-2379840543.png"><br> 
+                    <img src="ml/00008-2379840544.png">
+                    <img src="ml/00009-2379840545.png"> <br>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let timeout;
+        document.body.addEventListener('mousemove', () => {
+            const background = document.getElementById('background');
+            clearTimeout(timeout);
+            background.classList.add('clear');
+            timeout = setTimeout(() => {
+                background.classList.remove('clear');
+            }, 3000); // 3 Sekunden ohne Mausbewegung bis das Bild wieder unscharf wird
+        });
+    </script>
+</body>
+</html>
